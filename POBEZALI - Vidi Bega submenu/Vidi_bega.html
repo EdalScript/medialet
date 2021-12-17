@@ -16,8 +16,8 @@
           <section class="content">
                     <h3>ЛЕГКОАТЛЕТИЧЕСКИЕ НАПРАВЛЕНИЯ</h3>
                     <ul>
-                              <li id="sprint" onclick="">СПРИНТ
-                                        <section id="sprintDiv" style="display: block;">
+                              <li id="sprint" onclick="toggle()">СПРИНТ
+                                        <section id="sprintDiv" style="display: none">
                                                   <div class="flex-container">
                                                             <div class="sprint-text">
                                                                       <p><strong>
@@ -67,7 +67,7 @@
                                                             </div>
 
                                                   </div>
-                                                  <div class="sprint-p">
+                                                  <div class="sprint-p flex-container">
                                                             <span>!</span>
                                                             <p>Знаменитые бегуны: Усейн
                                                                       Болт, Морис Грин, Александр
@@ -75,7 +75,48 @@
                                                   </div>
                                         </section>
                               </li>
-                              <li>БЕГ НА СРЕДНИЕ ДИСТАНЦИИ</li>
+                              <li id="begna" onclick="toggle2()">БЕГ НА СРЕДНИЕ ДИСТАНЦИИ
+                                        <section id="begnaDiv" style="display: none">
+                                                  <div class="flex-container">
+                                                            <div class="begna-img"><img src="./video preview2.png"
+                                                                                alt="beg na srednie distancii"></div>
+                                                            <div class="begna-text">
+                                                                      <p>Легкоатлетическое направление, в котором длина
+                                                                                соревновательного отрезка больше, чем
+                                                                                спринт, но короче,
+                                                                                чем стайерская дистанция. На олимпиадах
+                                                                                проводятся
+                                                                                забеги на 800 и 1500 метров. Более
+                                                                                длинные отрезки (2000
+                                                                                м, 3000 м) никогда не использовались на
+                                                                                мировых
+                                                                                чемпионатах. Чаще всего забеги на 2000
+                                                                                ми более являются
+                                                                                коммерческими или применяются
+                                                                                спортсменами для
+                                                                                подготовки к крупным соревнованиям.</p>
+                                                            </div>
+                                                  </div>
+                                                  <div class="begna-text2">
+                                                            <p><strong>
+                                                                                Задача бегуна на средние дистанции –
+                                                                                разработать тактику
+                                                                                преодоления отрезка.
+                                                                      </strong> Спортсмены
+                                                                      стартуют в анаэробном (силовом) режиме,
+                                                                      использующем внутренние резервы как источник
+                                                                      энергии. После этого постепенно переходят на
+                                                                      аэробное дыхание, чтобы использовать кислород
+                                                                      в процессах обеспечения энергообмена.</p>
+                                                  </div>
+                                                  <div class="begna-p flex-container">
+                                                            <span>!</span>
+                                                            <p>Знаменитые атлеты: Давид
+                                                                      Рудиша, Юрий Борзаковский,
+                                                                      Мария Савинова.</p>
+                                                  </div>
+                                        </section>
+                              </li>
                               <li>СТАЙЕРСКИЙ БЕГ</li>
                               <li>МАРАФОН</li>
                               <li>ЭСТАФЕТНЫЙ БЕГ</li>
@@ -106,12 +147,23 @@
 
           <script> function toggle() {
                               let content = document.getElementById("sprintDiv");
-                              if (content.style.display === "none") {
+                              if (content.style.display == "none") {
                                         content.style.display = "block";
                               } else {
                                         content.style.display = "none";
                               }
                     }
+
+                    function toggle2() {
+                              let content2 = document.getElementById("begnaDiv");
+                              if (content2.style.display == "none") {
+                                        content2.style.display = "block";
+                              } else {
+                                        content2.style.display = "none";
+                              }
+                    }
+
+
           </script>
 </body>
 

@@ -20,7 +20,7 @@ footer {
 header h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 5.5rem;
   line-height: 1em;
   letter-spacing: -0.06em;
   text-transform: uppercase;
@@ -29,12 +29,14 @@ header h1 {
 }
 
 .content h3 {
+  font-size: 1.3rem;
   background-color: #0e4b86;
   color: white;
-  padding: 0 5.5rem;
+  padding: 0rem 5.5rem;
 }
 
 .content li {
+  font-size: 1.4rem;
   list-style: none;
   background-color: white;
   color: #aca6a6;
@@ -54,39 +56,63 @@ footer {
 .flex-container {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 0;
 }
 
 .sprint-text {
-  width: 40%;
+  width: 35%;
   color: black;
   padding: 2rem 0;
 }
 
-.sprint-img {
+.begna-text {
+  width: 35%;
+  color: black;
+  padding: 3rem 0;
+}
+
+.begna-text2 {
+  width: 50%;
+  color: black;
+  padding: 2rem 0;
+  margin: auto;
+}
+
+.sprint-img,
+.begna-img {
   width: 58%;
 }
 
-.sprint-img img {
+.sprint-img img,
+.begna-img img {
   width: 100%;
 }
 
-.sprint-p {
-  display: inline-flex;
-  margin: 1.5rem 9rem;
+.sprint-p,
+.begna-p {
+  margin-left: 15%;
   width: 35%;
   background-color: #e4e1e1;
   color: #124d99;
+  margin-bottom: 1rem;
 }
 
-.sprint-p p {
+.begna-p {
+  margin-left: 45%;
+}
+
+.sprint-p p,
+.begna-p p {
   font-style: italic;
   margin: auto;
-  width: 50%;
-  font-size: 1.1rem;
+  width: 55%;
+  font-size: 1.2rem;
 }
 
-.sprint-p span {
+.sprint-p span,
+.begna-p span {
   font-size: 3rem;
   color: white;
-  padding: 2rem 3rem 4rem 2.5rem;
+  padding: 1.3rem;
+  padding-left: 2.5rem;
 }
