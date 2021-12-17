@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  cursor: default;
 }
 
 header,
@@ -41,6 +42,51 @@ header h1 {
   border-bottom: 1px solid #aca6a6;
 }
 
+.content li:hover {
+  color: #0e4b86;
+  cursor: pointer;
+}
+
 footer {
   padding: 3rem 3rem 4rem 4rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sprint-text {
+  width: 40%;
+  color: black;
+  padding: 2rem 0;
+}
+
+.sprint-img {
+  width: 58%;
+}
+
+.sprint-img img {
+  width: 100%;
+}
+
+.sprint-p {
+  display: inline-flex;
+  margin: 1.5rem 9rem;
+  width: 35%;
+  background-color: #e4e1e1;
+  color: #124d99;
+}
+
+.sprint-p p {
+  font-style: italic;
+  margin: auto;
+  width: 50%;
+  font-size: 1.1rem;
+}
+
+.sprint-p span {
+  font-size: 3rem;
+  color: white;
+  padding: 2rem 3rem 4rem 2.5rem;
 }
