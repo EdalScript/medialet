@@ -59,19 +59,20 @@ footer {
   padding: 1.5rem 0;
 }
 
-.sprint-text {
+.sprint-text,
+.begna-text {
+  font-size: 1.1rem;
   width: 35%;
   color: black;
   padding: 2rem 0;
 }
 
 .begna-text {
-  width: 35%;
-  color: black;
   padding: 3rem 0;
 }
 
 .begna-text2 {
+  font-size: 1.1rem;
   width: 50%;
   color: black;
   padding: 2rem 0;
