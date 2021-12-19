@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #0e4b86;
+  height: 100vh;
+}
+.glavnaya {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 30%;
+}
+/* header */
+.zag1 {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 1em;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.zag1:hover {
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* menu for title */
+.h2 {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.h2:hover {
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* dropdown menu*/
+.hide {
+  display: none;
+}
+.hide + label ~ div {
+  display: none;
+}
+.hide:checked + label + div {
+  display: block;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  height: 17.1875em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.Headh1 {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  font-size: 12.5em;
+  font-family: Roboto Condensed;
+  font-weight: bold italic;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.BlokZag {
+  width: 100%;
+  height: 62px;
+  position: absolute;
+  top: 275px;
+  left: 15%;
+}
+
+.textZag {
+  color: #ffffff;
+  font-family: Roboto Condensed;
+  font-weight: Bold;
+  font-size: 3em;
+}
+/*dropdown blocks*/
+.accordion {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  height: 80px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #607d8b;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  color: #212121;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
