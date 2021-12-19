@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vidiBega.css">
+    <title>Виды бега</title>
+</head>
+
+<body>
+    <header>
+        <h1>Виды бега</h1>
+    </header>
+    <section class="content">
+        <h3>ЛЕГКОАТЛЕТИЧЕСКИЕ НАПРАВЛЕНИЯ</h3>
+        <ul>
+            <li id="sprint" onclick="toggle()">СПРИНТ
+                <section id="sprintDiv" style="display: none">
+                    <div class="flex-container">
+                        <div class="sprint-text">
+                            <p><strong>
+                                    Соревнования, основанные на
+                                    скоростном
+                                    преодолении
+                                    коротких
+                                    дистанций (60, 100, 200, 400
+                                    метров).
+                                </strong>
+                                Спринтеры —
+                                самые быстрые
+                                спортсмены в легкой атлетике. Благодаря
+                                этому, их
+                                забеги
+                                наиболее зрелищны. Порой победа и
+                                поражение
+                                зависят от сотых
+                                долей секунды. Кроме физической
+                                подготовки
+                                спортсмена, на
+                                результаты влияют техника старта,
+                                постановка
+                                стопы, движения
+                                руками, качество обуви и т. д.
+                                о
+                                <br>
+                                <br>
+                                Особенностью спринта является анаэробный
+                                (силовой)
+                                тип нагрузок. Спортсмен получает энергию
+                                для
+                                движения не из кислорода, а из запасов
+                                воды и
+                                гликогена в мышцах. Из-за этого пик
+                                скорости
+                                наступает через 40-60 метров, а после
+                                идет спад.
+                                Задача атлета - правильно рассчитать
+                                возможности,
+                                чтобы не истратить силы в середине
+                                дистанции.
+                            </p>
+                        </div>
+                        <div class="sprint-img"><img src="./video preview.png" alt="sprint">
+                        </div>
+
+                    </div>
+                    <div class="sprint-p flex-container">
+                        <span>!</span>
+                        <p>Знаменитые бегуны: Усейн
+                            Болт, Морис Грин, Александр
+                            Бреднев</p>
+                    </div>
+                </section>
+            </li>
+            <li id="begna" onclick="toggle2()">БЕГ НА СРЕДНИЕ ДИСТАНЦИИ
+                <section id="begnaDiv" style="display: none">
+                    <div class="flex-container">
+                        <div class="begna-img"><img src="./video preview2.png" alt="beg na srednie distancii"></div>
+                        <div class="begna-text">
+                            <p>Легкоатлетическое направление, в котором длина
+                                соревновательного отрезка больше, чем
+                                спринт, но короче,
+                                чем стайерская дистанция. На олимпиадах
+                                проводятся
+                                забеги на 800 и 1500 метров. Более
+                                длинные отрезки (2000
+                                м, 3000 м) никогда не использовались на
+                                мировых
+                                чемпионатах. Чаще всего забеги на 2000
+                                ми более являются
+                                коммерческими или применяются
+                                спортсменами для
+                                подготовки к крупным соревнованиям.</p>
+                        </div>
+                    </div>
+                    <div class="begna-text2">
+                        <p><strong>
+                                Задача бегуна на средние дистанции –
+                                разработать тактику
+                                преодоления отрезка.
+                            </strong> Спортсмены
+                            стартуют в анаэробном (силовом) режиме,
+                            использующем внутренние резервы как источник
+                            энергии. После этого постепенно переходят на
+                            аэробное дыхание, чтобы использовать кислород
+                            в процессах обеспечения энергообмена.</p>
+                    </div>
+                    <div class="begna-p flex-container">
+                        <span>!</span>
+                        <p>Знаменитые атлеты: Давид
+                            Рудиша, Юрий Борзаковский,
+                            Мария Савинова.</p>
+                    </div>
+                </section>
+            </li>
+            <li>СТАЙЕРСКИЙ БЕГ</li>
+            <li>МАРАФОН</li>
+            <li>ЭСТАФЕТНЫЙ БЕГ</li>
+            <li>БАРЬЕРНЫЙ БЕГ</li>
+            <li>СТИПЛЬ-ЧЕЗ</li>
+        </ul>
+
+        <h3>ЛЮБИТЕЛЬСКИЙ БЕГ</h3>
+        <ul>
+
+            <li>БЕГ ТРУСЦОЙ ИЛИ ДЖОГГИНТ</li>
+            <li>БЕГ НА МЕСТЕ</li>
+            <li>БЕГ ПО ЛЕСТНИЦЕ</li>
+            <li>БЕГ СУТЯЖЕЛИТЕЛЯМИ</li>
+            <li>ИНТЕРВАЛЬНЫЙ БЕГ</li>
+            <li>ФАРТЛЕК</li>
+            <li>КРОСС</li>
+            <li>ЧЕЛНОЧНЫЙ БЕГ</li>
+            <li>РОГЕЙН</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Ткачук Ульна</p>
+        <p>в курс 2021 год</p>
+        <p>СПЫГ мм. АЛ Штиглица</p>
+        <p>Кофадра графического дизайна</p>
+    </footer>
+
+    <script> function toggle() {
+            let content = document.getElementById("sprintDiv");
+            if (content.style.display == "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        function toggle2() {
+            let content2 = document.getElementById("begnaDiv");
+            if (content2.style.display == "none") {
+                content2.style.display = "block";
+            } else {
+                content2.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
