@@ -117,3 +117,49 @@ footer {
   padding: 1.3rem;
   padding-left: 2.5rem;
 }
+
+.modal {
+  background-color: #0e4b86;
+  position: relative;
+  border: solid 5px red;
+
+}
+
+.modal .modal-content {
+  display: none;
+  border: solid 5px red;
+  width: 8em;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  background-color: #0e4b86;
+}
+
+/* Style navigation menu links */
+.modal a {
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-style: normal;
+  font-weight:bolder;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+}
+
+/* Style the hamburger menu */
+.modal a.icon {
+  background: #0e4b86;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+/* Style the active link (or home/logo) */
+.modal a:hover {
+  font-style: italic;
+}
