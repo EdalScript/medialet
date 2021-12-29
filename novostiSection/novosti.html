@@ -6,20 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="novosti.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Новости</title>
 </head>
 
 <body>
+    <a class="icon" id="myBtn">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <a href="../landing/index.html">Главнаја</a>
+            <a href="../pobezaliSection/vidiBega.html">Побежали</a>
+            <a href="../novostiSection/novosti.html">Новости</a>
+            <a href="#">Афиша</a>
+        </div>
+
+    </div>
     <header>
         <h1>Новости</h1>
-    </header>
 
+
+    </header>
+    <section class="content">
+        <h3>В россии</h3>
+        <ul>
+            <li id="competition" onclick="toggle()">Соревнования
+                <section id="competitionDiv" style="display: none">
+                    <div class="competition-img"><img src="./competition1.png" alt="runner">
+                    </div>
+                    <div class="flex-container">
+                        <div class="competition-text">
+                            <p><strong>
+                                    Афинский классический марафон 2021.
+                                </strong>
+                                Согласно легенде, греческий воин по имени Фидиппид (по другим источникам — Филиппид)
+                                в 490 году до нашей эры после битвы при Марафоне пробежал, не останавливаясь,
+                                от Марафона до Афин, чтобы возвестить о победе греков. Добежав до Афин, он успел
+                                крикнуть «Радуйтесь, афиняне, мы победили!» и упал замертво. Эта легенда не
+                                подтверждается
+                                документальными источниками, но проверить ее можете Вы, пробежав 14 ноября 2021 года
+                                классическую
+                                трассу от Марафона до Афин. Греция уже сейчас открывает въезд для россиян.
+                            </p>
+                        </div>
+
+                        <div class="competition-img"><img src="./competition2.png" alt="runner">
+                        </div>
+
+                    </div>
+                </section>
+            </li>
+            <li id="amateur" onclick="toggle2()">Любительский спорт
+                <article id="amateurDiv" style="display: none">
+                    <div class="flex-container">
+                        <div class="amateur-img"><img src="./amateur1.png" alt="marathon"></div>
+                        <div class="amateur-text">
+                            <p>
+                                <strong>
+                                    RUN ASICS KRASNODAR
+                                </strong>
+                                <br/>
+                                Победители взрослого забега среди мужчин и женщин в этом году получат
+                                по 25 000 руб. Бегуны, занявшие 2-е место, - 15 000 руб., за 3-е место
+                                вручается приз в размере 10 000 руб. Участники и участницы, занявшие
+                                с 3 по 6 место, получат сертификаты на кроссовки ASICS.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="amateur-text2">
+                        <p>
+                            <strong>
+                                ИТОГИ МАРАФОНА "ЭРГО БЕЛЫЕ НОЧИ"
+                            </strong>
+                            <br/>
+                            3 июля 2016 года, при поддержке компании ASICS состоялся XXVII марафон «ЭРГО Белые
+                            Ночи».
+                            В этом году гонку пробежали рекордное количество
+                            бегунов – 7 319 человек: 2 868 человек преодолели марафонскую дистанцию,
+                            4 451 – 10 километров. Партнер марафона – крупнейший в мире производителем
+                            спортивной одежды и обуви ASICS – предоставил всем участникам соревнования футболки.
+                        </p>
+                    </div>
+                    <div class="amateur-img"><img src="./amateur2.png" alt="nature"></div>
+                    <div class="amateur-img"><img src="./amateur3.png" alt="warming up"></div>
+                    <div class="amateur-img"><img src="./amateur4.png" alt="track"></div>
+                </article>
+            </li>
+            <li>О людях</li>
+            <li>Экипировка</li>
+            <li>тренировки</li>
+    </section>
     <footer>
         <p>Ткачук Ульна</p>
         <p>в курс 2021 год</p>
         <p>СПЫГ мм. АЛ Штиглица</p>
         <p>Кофадра графического дизайна</p>
     </footer>
+
+    <script>
+        function toggle() {
+            let content = document.getElementById("competitionDiv");
+            if (content.style.display == "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        function toggle2() {
+            let content2 = document.getElementById("amateurDiv");
+            if (content2.style.display == "none") {
+                content2.style.display = "block";
+            } else {
+                content2.style.display = "none";
+            }
+        }
+
+        // Get the modal
+        let modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        let btn = document.getElementById("myBtn");
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
