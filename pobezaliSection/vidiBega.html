@@ -16,8 +16,8 @@
     </a>
 
     <div class="modal" id="myModal">
-        <div class="modal-content">
-            <a href="#news">Главнаја</a>
+        <div class="modal-content" id="myModalContent">
+            <a href="#news">Главная</a>
             <a href="#news">Побежали</a>
             <a href="#contact">Новости</a>
             <a href="#about">Афиша</a>
@@ -179,22 +179,25 @@
 
         // Get the modal
         let modal = document.getElementById("myModal");
+        let modalContent = document.getElementById("myModalContent");
+
 
         // Get the button that opens the modal
         let btn = document.getElementById("myBtn");
 
         // When the user clicks on the button, open the modal
         btn.onclick = function () {
-            modal.style.display = "block";
+            modal.classList.add("bg");
+            modalContent.classList.add("show");
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal) {
-                modal.style.display = "none";
+                modal.classList.remove("bg");
+                modalContent.classList.remove("show");
             }
         }
-
     </script>
 </body>
 
