@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Виды бега</title>
 </head>
-<body><div  class="modal">
-            <div class="modal-content" id="myModal">
-                <a href="#news">Главнаја</a>
-                <a href="#news">Побежали</a>
-                <a href="#contact">Новости</a>
-                <a href="#about">Афиша</a>
-            </div>
 
-            <a href="javascript:void(0);" class="icon" id="myBtn" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+<body>
+    <a class="icon" id="myBtn">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <a href="#news">Главнаја</a>
+            <a href="#news">Побежали</a>
+            <a href="#contact">Новости</a>
+            <a href="#about">Афиша</a>
+        </div>
+
+    </div>
     <header>
         <h1>Виды бега</h1>
-        
-        </div>
+
+
     </header>
     <section class="content">
         <h3>ЛЕГКОАТЛЕТИЧЕСКИЕ НАПРАВЛЕНИЯ</h3>
@@ -174,22 +178,22 @@
         }
 
         // Get the modal
-let modal = document.getElementById("myModal");
+        let modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-let btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        let btn = document.getElementById("myBtn");
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
     </script>
 </body>
