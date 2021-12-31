@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="voRusija.css">
+    <link rel="stylesheet" href="Afisha.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Афиша</title>
 </head>
@@ -29,8 +29,8 @@
     </header>
 
     <section class="navbar">
-        <h3>В России</h3>
-        <h3>В Мире</h3>
+        <a id="vrossiiBtn" class="active">В России</h3>
+            <a id="vmireBtn">В Мире</a>
     </section>
 
     <div class="calendar">
@@ -62,9 +62,9 @@
         </div>
     </div>
 
-    <! --- V ROSSII --->
+    <! ----------------------------- V ROSSII -------------------------------------->
 
-        <section class="content">
+        <section class="content" id="vrossii" style="display: block;">
 
             <div class="news-div">
                 <div class="news-upper-part">
@@ -144,7 +144,7 @@
                     <h2 class="news-date">07.05.2021</h2>
                 </div>
                 <div class="news-lower-part">
-                    <p><span class="info">место</span>/</p>
+                    <p><span class="info">место</span>/Гатчина</p>
                     <p><span class="info">тип</span>/Трейлсаый</p>
                 </div>
             </div>
@@ -156,14 +156,121 @@
                     <h2 class="news-date">08.05.2021</h2>
                 </div>
                 <div class="news-lower-part">
-                    <p><span class="info">место</span>/</p>
+                    <p><span class="info">место</span>/Москва</p>
                     <p><span class="info">тип</span>/Городской</p>
                 </div>
             </div>
 
         </section>
 
+        <! --------------------------------- V MIRE ----------------------------->
 
+            <section class="content" id="vmire" style="display: none;">
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">XNRG PONY EXPRESS ULTRA</h2>
+                        <h2 class="news-date">01.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Великобритания</p>
+                        <p><span class="info">место</span>/New Forest National Par</p>
+                        <p><span class="info">тип</span>/Трейловый</p>
+                    </div>
+                </div>
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">WORCESTER COD BREW RUN</h2>
+                        <h2 class="news-date">01.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Великобритания</p>
+                        <p><span class="info">место</span>/New Forest National Park</p>
+                        <p><span class="info">тип</span>/Трейловый</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">KASHIWA NO HA SOUKAI MARATHON</h2>
+                        <h2 class="news-date">05.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Япония</p>
+                        <p><span class="info">место</span>/Kashiwa</p>
+                        <p><span class="info">тип</span>/Городской</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">AALBORG BRUTAL MARATHON</h2>
+                        <h2 class="news-date">07.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Дания</p>
+                        <p><span class="info">место</span>/Aalborg</p>
+                        <p><span class="info">тип</span>/Городской</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">T42 TRAIL RUN</h2>
+                        <h2 class="news-date">08.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Новая Зеландия</p>
+                        <p><span class="info">место</span>/Central Plateau</p>
+                        <p><span class="info">тип</span>/Трейловый</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">FUJI SUSONO HALF MARATHON</h2>
+                        <h2 class="news-date">16.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Япония</p>
+                        <p><span class="info">место</span>/Susono</p>
+                        <p><span class="info">тип</span>/Городской</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">AALBORG BRUTAL MARATHON</h2>
+                        <h2 class="news-date">07.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Дания</p>
+                        <p><span class="info">место</span>/ Aalborg</p>
+                        <p><span class="info">тип</span>/Городской</p>
+                    </div>
+                </div>
+
+
+                <div class="news-div">
+                    <div class="news-upper-part">
+                        <h2 class="news-title">T42 TRAIL RUN</h2>
+                        <h2 class="news-date">08.05.2021</h2>
+                    </div>
+                    <div class="news-lower-part"><span class="rectangle"></span>
+                        <p><span class="info">страна</span>/Новая Зеландия</p>
+                        <p><span class="info">место</span>/Central Plateau</p>
+                        <p><span class="info">тип</span>/Трейловый</p>
+                    </div>
+                </div>
+
+
+            </section>
 
             <footer>
                 <p>Ткачук Ульна</p>
@@ -172,23 +279,35 @@
                 <p>Кофадра графического дизайна</p>
             </footer>
 
-            <script> function toggle() {
-                    let content = document.getElementById("sprintDiv");
-                    if (content.style.display == "none") {
-                        content.style.display = "block";
-                    } else {
-                        content.style.display = "none";
-                    }
+
+
+            <script>
+
+                // CONTENT TOGGLE BUTTON //
+
+                let vrossii = document.getElementById("vrossii");
+                let vmire = document.getElementById("vmire");
+
+                let vrossiiBtn = document.getElementById("vrossiiBtn");
+                let vmireBtn = document.getElementById("vmireBtn");
+
+                vrossiiBtn.onclick = function () {
+                    vrossii.style.display = "block";
+                    vmire.style.display = "none";
+                    vrossiiBtn.classList.add("active");
+                    vmireBtn.classList.remove("active");
                 }
 
-                function toggle2() {
-                    let content2 = document.getElementById("begnaDiv");
-                    if (content2.style.display == "none") {
-                        content2.style.display = "block";
-                    } else {
-                        content2.style.display = "none";
-                    }
+
+                vmireBtn.onclick = function () {
+                    vmire.style.display = "block";
+                    vrossii.style.display = "none";
+                    vrossiiBtn.classList.remove("active");
+                    vmireBtn.classList.add("active");
                 }
+
+
+                // Burger menu functions //
 
                 // Get the modal
                 let modal = document.getElementById("myModal");

@@ -34,26 +34,32 @@ header h1 {
   width: 100%;
 }
 
-.navbar h3 {
+.navbar a {
   font-size: 1.3rem;
   background-color: #0e4b86;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
-.navbar h3:hover {
+.navbar a:hover {
   font-style: italic;
 }
 
-.navbar h3:first-child {
+.navbar a:first-child {
   width: 16.5%;
   padding-left: 5.5%;
 }
 
-.navbar h3:last-child {
+.navbar a:last-child {
   width: 100%;
-  padding-left: 0.6em;
+  padding: 0 0.8em;
+}
+
+.navbar a.active {
+  color: #0e4b86;
+  background: white;
 }
 
 .calendar {
@@ -140,22 +146,11 @@ header h1 {
   color: #aca6a6;
 }
 
-.content li {
-  font-size: 1.4rem;
-  list-style: none;
-  background-color: white;
-  color: #aca6a6;
-  padding: 0.7rem 3rem;
-  border-bottom: 1px solid #aca6a6;
-}
-
-.content li:last-child {
-  border-bottom: none;
-}
-
-.content li:hover {
-  color: #0e4b86;
-  cursor: pointer;
+.news-lower-part .rectangle {
+  width: 31px;
+  height: 22px;
+  background-color: #c5c5c5;
+  margin: 0 0.5em;
 }
 
 footer {
