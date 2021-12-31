@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: default;
+}
+
+header,
+footer {
+  background: #0e4b86;
+  color: white;
+}
+
+header h1 {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 1em;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  padding: 1rem 5.5rem;
+  font-style: italic;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+
+.navbar h3 {
+  font-size: 1.3rem;
+  background-color: #0e4b86;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar h3:hover {
+  font-style: italic;
+}
+
+.navbar h3:first-child {
+  width: 16.5%;
+  padding-left: 5.5%;
+}
+
+.navbar h3:last-child {
+  width: 100%;
+  padding-left: 0.6em;
+}
+
+.calendar {
+  padding: 1.8em 0 1.2em 0;
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.months-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0 1em 0;
+}
+
+.months-div li {
+  color: #aca6a6;
+  list-style-type: none;
+}
+
+.months {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  letter-spacing: 0.6px;
+}
+
+.year {
+  display: flex;
+  justify-content: right;
+  margin: 0 auto;
+}
+
+.year p {
+  padding: 0 1.3em;
+  color: #aca6a6;
+}
+
+.year span img {
+  width: 19px;
+}
+
+/* CONTENT  */
+
+.content {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.news-div {
+  border-top: solid 1px #0e3886;
+}
+
+.news-upper-part {
+  display: flex;
+  justify-content: space-between;
+  color: #0e3886;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+.news-title {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.news-lower-part {
+  display: flex;
+  margin: 2em 0;
+}
+
+.news-lower-part p {
+  color: #0e3886;
+  margin-right: 1.5em;
+  font-style: italic;
+}
+
+.news-lower-part .info {
+  color: #aca6a6;
+}
+
+.content li {
+  font-size: 1.4rem;
+  list-style: none;
+  background-color: white;
+  color: #aca6a6;
+  padding: 0.7rem 3rem;
+  border-bottom: 1px solid #aca6a6;
+}
+
+.content li:last-child {
+  border-bottom: none;
+}
+
+.content li:hover {
+  color: #0e4b86;
+  cursor: pointer;
+}
+
+footer {
+  padding: 3rem 3rem 4rem 4rem;
+}
+
+/* BURGER MENU ********************************/
+
+.icon {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-right: 22px;
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+@keyframes slideInFromAbove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.modal-content {
+  background-color: #0e4b86;
+  margin-top: 0;
+  float: right;
+  padding: 7px 10px;
+  width: 9em;
+  animation: 300ms ease-in 0s 1 slideOut;
+}
+
+.modal-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding: 0.4px 4px;
+  font-weight: 600;
+}
+
+.modal-content a:hover {
+  font-style: italic;
+}
+
+.show {
+  visibility: visible;
+  animation: 300ms ease-in 0s 1 slideInFromAbove;
+}
+
+.bg {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background linear 400ms;
+}
