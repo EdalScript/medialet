@@ -175,3 +175,40 @@ footer {
 .modal-content a:hover {
   font-style: italic;
 }
+
+/*END of burger btn*/
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  background-color: #0e4b86;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  font-style: italic;
+}
+
+.navbar a:first-child {
+  width: 16.5%;
+  padding-left: 5.5%;
+}
+
+.navbar a:last-child {
+  width: 100%;
+  padding: 0 0.8em;
+}
+
+.navbar a.active {
+  color: #0e4b86;
+  background: white;
+}
