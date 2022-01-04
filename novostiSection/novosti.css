@@ -1,8 +1,14 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+html {
   box-sizing: border-box;
 }
 body {
@@ -71,30 +77,53 @@ footer {
 }
 
 /* Properties for Amateur DIV */
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+#amateurDiv{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+}
+.gridImages{
+  width:60%;
+  height:60%;
+  object-fit: cover;
+}
+.gridItem1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gridItem2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gridItem3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gridItem4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
 
-.competitiont-text,
-.amateur-text {
+.competitiont-text {
   font-size: 1.1rem;
-  width: 35%;
   color: black;
   padding: 2rem 0;
+  right: 50px;
 }
 
-.amateur-text {
-  margin: 1rem;
-}
-
-.amateur-text2 {
-  font-size: 1.1rem;
-  width: 50%;
-  color: black;
-  padding: 1.2rem 0;
-  margin: 1rem;
-}
-
-.amateur-img{
-  width: 50%;
-}
 .competition-p,
 .amateur-p {
   margin-left: 15%;
@@ -216,3 +245,8 @@ footer {
   color: #0e4b86;
   background: white;
 }
+
+/*End of navbar*/
+
+/*Grid material for content*/
+

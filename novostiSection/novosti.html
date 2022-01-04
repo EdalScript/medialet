@@ -12,61 +12,69 @@
 
 <body>
     <div class="wrapper">
-    <a class="icon" id="myBtn">
-        <i class="fa fa-bars"></i>
-    </a>
+        <a class="icon" id="myBtn">
+            <i class="fa fa-bars"></i>
+        </a>
 
-    <div class="modal" id="myModal">
-        <div class="modal-content">
-            <a href="../landing/index.html">Главная</a>
-            <a href="../pobezaliSection/vidiBega.html">Побежали</a>
-            <a href="../novostiSection/novosti.html">Новости</a>
-            <a href="../afishaSection/Afisha.html">Афиша</a>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <a href="../landing/index.html">Главная</a>
+                <a href="../pobezaliSection/vidiBega.html">Побежали</a>
+                <a href="../novostiSection/novosti.html">Новости</a>
+                <a href="../afishaSection/Afisha.html">Афиша</a>
+            </div>
+
         </div>
-
-    </div>
-    <header>
-        <h1>Новости</h1>
-
-
-    </header>
-    <section class="navbar">
-        <a id="vrossiiBtn" class="active">В России</h3>
-            <a id="vmireBtn">В Мире</a>
-    </section>
-    <section class="content" id="vrossii" style="display: block;">
-        <ul>
-            <li id="competition" onclick="toggle()">Соревнования
-                <section id="competitionDiv" style="display: none">
-                    <div class="competition-img"><img src="./competition1.png" alt="runner">
-                    </div>
-                    <div class="flex-container">
-                        <div class="competition-text">
-                            <p><strong>
-                                    Афинский классический марафон 2021.
-                                </strong>
-                                Согласно легенде, греческий воин по имени Фидиппид (по другим источникам — Филиппид)
-                                в 490 году до нашей эры после битвы при Марафоне пробежал, не останавливаясь,
-                                от Марафона до Афин, чтобы возвестить о победе греков. Добежав до Афин, он успел
-                                крикнуть «Радуйтесь, афиняне, мы победили!» и упал замертво. Эта легенда не
-                                подтверждается
-                                документальными источниками, но проверить ее можете Вы, пробежав 14 ноября 2021 года
-                                классическую
-                                трассу от Марафона до Афин. Греция уже сейчас открывает въезд для россиян.
-                            </p>
+        <header>
+            <h1>Новости</h1>
+        </header>
+        <section class="navbar">
+            <a id="vrossiiBtn" class="active">В России</h3>
+                <a id="vmireBtn">В Мире</a>
+        </section>
+        <section class="content" id="vrossii" style="display: block;">
+            <ul>
+                <li id="competition" onclick="toggle()">Соревнования
+                    <article id="competitionDiv" style="display: none">
+                        <div class="competition-img"><img src="./competition1.png" alt="runner">
                         </div>
+                        <div class="flex-container">
+                            <div class="competition-text">
+                                <p><strong>
+                                        Афинский классический марафон 2021.
+                                    </strong>
+                                    Согласно легенде, греческий воин по имени Фидиппид (по другим источникам — Филиппид)
+                                    в 490 году до нашей эры после битвы при Марафоне пробежал, не останавливаясь,
+                                    от Марафона до Афин, чтобы возвестить о победе греков. Добежав до Афин, он успел
+                                    крикнуть «Радуйтесь, афиняне, мы победили!» и упал замертво. Эта легенда не
+                                    подтверждается
+                                    документальными источниками, но проверить ее можете Вы, пробежав 14 ноября 2021 года
+                                    классическую
+                                    трассу от Марафона до Афин. Греция уже сейчас открывает въезд для россиян.
+                                </p>
+                            </div>
 
-                        <div class="competition-img"><img src="./competition2.png" alt="runner">
+                            <div class="competition-img"><img src="./competition2.png" alt="runner">
+                            </div>
+
                         </div>
-
-                    </div>
-                </section>
-            </li>
-            <li id="amateur" onclick="toggle2()">Любительский спорт
-                <article id="amateurDiv" style="display: none">
-                    <div class="flex-container">
-                        <div class="amateur-img"><img src="./amateur1.png" alt="marathon"></div>
-                        <div class="amateur-text">
+                    </article>
+                </li>
+                <li id="amateur" onclick="toggle2()">Любительский спорт
+                    <article id="amateurDiv" style="display: none">
+                        <figure class="gridImages gridItem1">
+                            <img src="./amateur1.png" class="gridImages" alt="city">
+                        </figure>
+                        <figure class="gridImages gridItem2">
+                            <img src="./amateur2.png" class="gridImages" alt="nature">
+                        </figure>
+                        <figure class="gridImages gridItem3">
+                            <img src="./amateur3.png" class="gridImages" alt="warming up">
+                        </figure>
+                        <figure class="gridImages gridItem4">
+                            <img src="./amateur4.png" class="gridImages" alt="track">
+                        </figure>
+                        <div>
                             <p>
                                 <strong>
                                     RUN ASICS KRASNODAR
@@ -78,38 +86,34 @@
                                 с 3 по 6 место, получат сертификаты на кроссовки ASICS.
                             </p>
                         </div>
-                    </div>
-                    <div class="amateur-text2">
-                        <p>
-                            <strong>
-                                ИТОГИ МАРАФОНА "ЭРГО БЕЛЫЕ НОЧИ"
-                            </strong>
-                            <br />
-                            3 июля 2016 года, при поддержке компании ASICS состоялся XXVII марафон «ЭРГО Белые
-                            Ночи».
-                            В этом году гонку пробежали рекордное количество
-                            бегунов – 7 319 человек: 2 868 человек преодолели марафонскую дистанцию,
-                            4 451 – 10 километров. Партнер марафона – крупнейший в мире производителем
-                            спортивной одежды и обуви ASICS – предоставил всем участникам соревнования футболки.
-                        </p>
-                    </div>
-                    <div class="amateur-img"><img src="./amateur2.png" alt="nature"></div>
-                    <div class="amateur-img"><img src="./amateur3.png" alt="warming up"></div>
-                    <div class="amateur-img"><img src="./amateur4.png" alt="track"></div>
-                </article>
-            </li>
-            <li>О людях</li>
-            <li>Экипировка</li>
-            <li>тренировки</li>
-    </section>
-    <section class="content" id="vmire" style="display: none;"></section>
-    <footer>
-        <p>Ткачук Ульна</p>
-        <p>в курс 2021 год</p>
-        <p>СПЫГ мм. АЛ Штиглица</p>
-        <p>Кофадра графического дизайна</p>
-    </footer>
-</div>
+                        <div>
+                            <p>
+                                <strong>
+                                    ИТОГИ МАРАФОНА "ЭРГО БЕЛЫЕ НОЧИ"
+                                </strong>
+                                <br />
+                                3 июля 2016 года, при поддержке компании ASICS состоялся XXVII марафон «ЭРГО Белые
+                                Ночи».
+                                В этом году гонку пробежали рекордное количество
+                                бегунов – 7 319 человек: 2 868 человек преодолели марафонскую дистанцию,
+                                4 451 – 10 километров. Партнер марафона – крупнейший в мире производителем
+                                спортивной одежды и обуви ASICS – предоставил всем участникам соревнования футболки.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li>О людях</li>
+                <li>Экипировка</li>
+                <li>тренировки</li>
+        </section>
+        <section class="content" id="vmire" style="display: none;"></section>
+        <footer>
+            <p>Ткачук Ульна</p>
+            <p>в курс 2021 год</p>
+            <p>СПЫГ мм. АЛ Штиглица</p>
+            <p>Кофадра графического дизайна</p>
+        </footer>
+    </div>
     <script>
         function toggle() {
             let content = document.getElementById("competitionDiv");
