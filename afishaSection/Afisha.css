@@ -88,10 +88,15 @@ header h1 {
   display: flex;
   width: 94%;
   justify-content: space-between;
-  flex-wrap: wrap;
   letter-spacing: 0.6px;
 }
-
+.months > li:hover{
+  transform: scale(1.2);
+}
+#btnLeft,
+#btnRight{
+  cursor: pointer;
+}
 .year {
   display: flex;
   justify-content: right;
