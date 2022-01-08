@@ -48,7 +48,7 @@ header h1 {
 }
 
 .content li {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   list-style: none;
   background-color: white;
   color: #aca6a6;
@@ -82,16 +82,61 @@ footer {
   margin: 2rem auto; 
 }
 #amateurDiv{
+  position: relative;
+  object-fit: contain;
+  max-width: 1178px;
+}
+.images{
+  width:60%;
+  height:60%;
+}
+.images.city{
+  width: 80%;
+}
+.caption1{
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  width: 400px;
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 1)
+}
+.caption2{
+  position: absolute;
+  left: 436px;
+  top: 250px;
+  width: 200px;
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 1)
+}
+h4 {
+  font-size: 1.5rem;
+  color: #0e4b86;
+}
+.images.nature{
+  position:relative;
+  left: 580px;
+  bottom: 120px;
+}
+.images.warmUp{
+  position: relative;
+  bottom: 333px;
+  left: 142px;
+}
+.images.track{
+  position: absolute;
+  bottom: -65px;
+  right: -400px;
+}
+/*
+#amateurDiv{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 15px;
 }
-.gridImages{
-  width:60%;
-  height:60%;
-  object-fit: cover;
-}
+
+
 .gridItem1 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -116,7 +161,7 @@ footer {
   grid-row-start: 3;
   grid-row-end: 6;
 }
-
+*/
 .competitiont-text {
   font-size: 1.1rem;
   color: black;
