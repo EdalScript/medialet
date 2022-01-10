@@ -75,10 +75,26 @@ footer {
   justify-content: space-between;
   padding: 1.5rem 0;
 }
-/* Properties for Amateur DIV */
+
+.flexbox{
+  width: 100vw;
+  display: inline-flex;
+  margin-top:1rem;
+  margin-left:-50px;
+}
+.item2{
+  width: calc(50% - 10px);
+  margin-left: 1rem;
+}
+
+/* Properties for Competition & Amateur DIV */
 .container {
   width: 60%;
   margin: 2rem auto; 
+}
+.container-lg{
+  width: 100vw;
+  display: inline-flex;
 }
 .container2 {
   display: flex;
@@ -92,24 +108,53 @@ footer {
   bottom: 370px;
   left: 200px;
 }
+#competitionDiv,
 #amateurDiv{
   position: relative;
   object-fit: contain;
   max-width: 1178px;
 }
+.competition-img-1{
+  display: flex;
+  justify-content: flex-start;
+  width: calc(50% - 50px);
+}
+.competition-img-2{
+  display: flex;
+  justify-content: flex-end;
+  width: calc(50% - 10px);
+}
 .images{
   width:60%;
   height:60%;
 }
+.images-lg {
+  width: 80%;
+  height: 80%;
+}
+.images-xl {
+  width: 70vw;
+  height: auto;
+}
 .images.city{
   width: 80%;
   margin: 0;
+}
+.images.runner{
+  width: calc(50% - 10px);
 }
 .caption1{
   position: absolute;
   right: 100px;
   top: 50px;
   width: 400px;
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 1)
+}
+.caption-runner{
+  justify-content: flex-end;
+  margin-left: 2rem;
+  width: calc(50% - 20px);
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 1)
 }
