@@ -75,11 +75,22 @@ footer {
   justify-content: space-between;
   padding: 1.5rem 0;
 }
-
 /* Properties for Amateur DIV */
 .container {
   width: 60%;
   margin: 2rem auto; 
+}
+.container2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  bottom: 370px;
+  left: 200px;
 }
 #amateurDiv{
   position: relative;
@@ -92,6 +103,7 @@ footer {
 }
 .images.city{
   width: 80%;
+  margin: 0;
 }
 .caption1{
   position: absolute;
@@ -109,6 +121,12 @@ footer {
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 1)
 }
+.caption3{
+  margin: 2rem;
+  width: 400px;
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 1)
+}
 h4 {
   font-size: 1.5rem;
   color: #0e4b86;
@@ -116,7 +134,7 @@ h4 {
 .images.nature{
   position:relative;
   left: 580px;
-  bottom: 120px;
+  bottom: 170px;
 }
 .images.warmUp{
   position: relative;
@@ -125,43 +143,18 @@ h4 {
 }
 .images.track{
   position: absolute;
-  bottom: -65px;
-  right: -400px;
+  bottom: 390px;
+  right: -180px;
+  height: 45%;
+  width: 46%;
 }
-/*
-#amateurDiv{
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
+.images.finish{
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: right;
+  justify-content: right;
 }
-
-
-.gridItem1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-.gridItem2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-.gridItem3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-.gridItem4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
-*/
 .competitiont-text {
   font-size: 1.1rem;
   color: black;

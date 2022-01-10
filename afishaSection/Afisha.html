@@ -37,7 +37,8 @@
         <div class="container">
             <ul class="months-div">
                 <span style="color: white; background-color: #aca6a6; padding: 0.2px 5px 0.2px 2px;">
-                    <i class="fa fa-chevron-left"></i></span>
+                    <a id="btnLeft"><i class="fa fa-chevron-left"></i></a>
+                </span>
 
                 <div class="months">
                     <li>Январь</li>
@@ -50,10 +51,14 @@
                     <li>Август</li>
                     <li>Сентябрь</li>
                     <li>Октябрь</li>
+                    <li>Hоябрь</li>
+                    <li>Декабрь</li>
                 </div>
 
                 <span style="color: white; background-color: #aca6a6; padding: 0.2px 2px 0.2px 5px;">
-                    <i class="fa fa-chevron-right"></i></span>
+                    <a id="btnRight">
+                        <i class="fa fa-chevron-right"></i></a>
+                </span>
             </ul>
 
             <div class="year">
@@ -306,7 +311,32 @@
                     vmireBtn.classList.add("active");
                 }
 
+                //Horizontal scrolling //
+                let btnL = document.getElementById("btnLeft");
+                let btnR = document.getElementById("btnRight");
 
+                let content = document.getElementById("content");
+
+                btnR.addEventListener("click", goRight);
+                btnL.addEventListener("click", goLeft);
+
+                let clickedIndex = 0;
+
+                function goRight() {
+                    if (clickedIndex < 2) {
+                        clickedIndex = clickedIndex + 1;
+                        content.style.marginLeft = -190 * clickedIndex + "px";
+                    }
+
+                }
+
+                function goLeft() {
+                    if (clickedIndex > 0) {
+                        clickedIndex = clickedIndex - 1;
+                        content.style.marginLeft = -190 * clickedIndex + "px";
+
+                    }
+                }
                 // Burger menu functions //
 
                 // Get the modal
