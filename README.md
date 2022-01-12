@@ -1,8 +1,6 @@
 # Medialet
 
-## A static website covering relevant sport news in Russia
+### A static website covering relevant sport news in Russia
 
-### Check it out! --->
+### Check it out! --->  https://edalscript.github.io/medialet/
 
-#### Changelog: V-0.1
-Project still under construction. ごめん。
