@@ -93,6 +93,7 @@ header h1 {
 .months > li:hover{
   transform: scale(1.2);
   color:#0e4b86;
+  font-style:italic;
 }
 #btnLeft,
 #btnRight{

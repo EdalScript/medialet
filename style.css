@@ -34,7 +34,6 @@ body {
   font-style: italic;
   font-weight: bold;
   padding-left: 0.8rem;
-  border-left: 4px #fff solid;
 }
 a {
   text-decoration: none;
@@ -55,7 +54,6 @@ a {
   font-style: italic;
   font-weight: bold;
 }
-
 
 /* dropdown menu*/
 .hide {
