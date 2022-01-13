@@ -189,11 +189,18 @@ footer {
   font-size: 1rem;
   color:rgba(0, 0, 0, 1);
   min-width: 340px;
+  text-transform:none;
+}
+.caption-runner h4{
+  text-transform: uppercase;
 }
 .caption2{
-  display: flex;
+  display: block;
   flex-direction: column;
+  transform: translateX(-35%);
+  justify-content: flex-start;
   margin: 0 2.5rem 0 1rem;
+  padding: auto;
   font-size: 1rem;
   color:rgba(0, 0, 0, 1)
 }
@@ -377,6 +384,3 @@ h4 {
 }
 
 /*End of navbar*/
-
-/*Grid material for content*/
-

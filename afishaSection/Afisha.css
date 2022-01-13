@@ -84,6 +84,13 @@ header h1 {
   list-style-type: none;
 }
 
+.months-div span {
+  background: #aca6a6;
+}
+.months-div span:hover{
+  background:#0e4b86;
+}
+
 .months {
   display: flex;
   width: 94%;
